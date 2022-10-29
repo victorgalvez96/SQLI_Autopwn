@@ -1,2 +1,2 @@
 # SQLI_Autopwn
-SQLI Autopwn
+Send a SQLI for introduce a file to execute remote code (ReverseShell)
